@@ -1,0 +1,27 @@
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:form = "sap.ui.layout.form"
+	xmlns:course="opensap.manageproducts.ManageProducts.customControls"
+	controllerName="opensap.manageproducts.ManageProducts.controller.ProductDetails" xmlns:html="http://www.w3.org/1999/xhtml">
+		<Panel
+			class="sapUiResponsiveMargin"
+			headerText = "{i18n>productTitle}"
+			expandable = "{device>/system/phone}"
+			expanded = "true">
+			<content>
+				<form:SimpleForm>
+					<form:content>
+						<Label text = "{i18n>productCategoryLabel}"></Label>
+						<Text text="{Category}"/>
+						<Label text="{i18n>productNameLabel}"/>
+						<Text text="{Name}"/>
+						<Label text="{i18n>productWeightLabel}"/>
+						<Text text="{= ${WeightMeasure} + ' ' + ${WeightUnit}}"/>
+					</form:content>
+				</form:SimpleForm>
+				<course:ProductRate valueSubmit="onRatingChanged"/>
+			</content>
+		</Panel>
+</mvc:View>

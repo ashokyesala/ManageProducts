@@ -1,0 +1,36 @@
+{
+    "application": {
+        "id": "",
+        "title": "opensap.manageproducts.ManageProducts.ManageProducts",
+        "description": "ManageProducts",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#ManageProducts-Display",
+        "navigationComponentName": "opensap.manageproducts.ManageProducts",
+        "intentSemanticObject": "ManageProducts",
+        "intentAction": "Display",
+        "html5ApplicationName": "manageproducts",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "5df8b5ce-4525-4e86-9e7c-c8c4df2f37dd"
+        ],
+        "contentPackages": [
+            "00000000-0000-2222-0000-00000000"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "DynamicTile",
+        "title": "Products",
+        "subtitle": "Info",
+        "searchKeywords": "Products,Info",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "/sap/fiori/manageproducts/ES5/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ProductSet/$count",
+        "refreshInterval": 10,
+        "displayNumberUnit": "Product"
+    }
+}
