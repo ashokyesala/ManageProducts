@@ -24,7 +24,7 @@
 		</List>
 		</content>
 	</Panel>
-	<Panel
+	<!--<Panel-->
 		class="sapUiResponsiveMargin sapUiHideOnPhone"
 		width="auto"
 		headerText="{i18n>mapTitle}">
@@ -37,5 +37,5 @@
 			],
 			formatter: '.formatter.formatMapUrl'
 			}" />
-	</Panel>
+	<!--</Panel>-->
 </core:FragmentDefinition>
